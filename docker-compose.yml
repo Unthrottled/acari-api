@@ -1,0 +1,13 @@
+version: "3"
+services:
+  vertx-wiki:
+    image: alexsimons/vertx-web-service:1.1.4
+  hystrix:
+    image: alexsimons/hystrix-web-service:1.1.2
+  mongo:
+    image: mongo:latest
+    volumes:
+      - "./dataDump/:/data/db"
+
+#Use this compose file to run both the vertx web server and the
+#Mongo database used for data persistence.
