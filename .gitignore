@@ -26,3 +26,5 @@
 /.nb-gradle/
 
 dataDump
+
+edge-service/certs
