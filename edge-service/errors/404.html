@@ -7,11 +7,14 @@
     >
     <link rel="shortcut icon" href="reach.ico">
     <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <style>
         .backdrop {
 
         }
+
 
 
         img {
@@ -25,11 +28,11 @@
             src: url('./assets/Protos.otf');
         }
 
-        h1 {
-            font-family: proto,serif;
-        }
 
         html {
+            font-family: 'Roboto', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             background: url('assets/stripe.png') fixed, linear-gradient(#E0E0E0, #E0E0E0, rgba(101, 16, 16, 0.83));
             height: 100%;
         }
@@ -37,9 +40,6 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-            sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -49,12 +49,34 @@
             monospace;
         }
 
+        .content {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding: 1em;
+        }
+
+        .shrug-container{
+            padding: 1em;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .messag-container {
+            background-color: #424242;
+        }
+
     </style>
     <title>Acari Unkown</title>
 </head>
 <body class="backdrop">
-<h1>404 Aww snap! Something went wrong... ¯\_(ツ)_/¯</h1>
-<p>Contact the <a href="webmaster@yoursite.com">webmaster</a> and send him the link of the page you were trying to
-    reach, and the page where it is published</p>
+<div class="content">
+    <div class="messag-container">
+        <h1>Hmmm, I can't seem to find that.</h1>
+    </div>
+    <div class="shrug-container">
+        <img src="assets/shrug.png" alt="¯\_(ツ)_/¯"/>
+    </div>
+
+</div>
 </body>
 </html>
