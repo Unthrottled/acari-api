@@ -72,6 +72,13 @@
             margin: 32px auto;
             padding: 48px;
             max-width: 400px;
+            cursor: pointer;
+        }
+
+        .go-home-container:hover {
+            box-shadow: 0px 1px 5px 0px rgba(10,6,101, 0.52),
+            0px 2px 2px 0px rgba(10,6,101, 0.54),
+            0px 3px 1px -2px rgba(10,6,101, 0.52)
         }
 
         .footer {
@@ -100,10 +107,10 @@
     <div class="shrug-container">
         <img src="assets/shrug.png" alt="¯\_(ツ)_/¯"/>
     </div>
-    <div class="footer">
+    <div class="footer" onclick="window.location = 'https://acari.io'">
         <div class="go-home-container">
             <div class="home-button">
-                Go Home
+                    Go Home
             </div>
         </div>
     </div>
