@@ -18,6 +18,8 @@ services:
       - mongo
   hystrix:
     image: alexsimons/hystrix-web-service:1.1.2
+    ports:
+      - 3344:3344
   mongo:
     image: mongo:latest
     volumes:
