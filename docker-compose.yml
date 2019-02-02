@@ -3,7 +3,7 @@ services:
   edge-service:
     build:
       context: edge-service
-    image: alexsimons/edge-service:1.0.0
+    image: alexsimons/edge-service:1.0.1
     depends_on:
       - vertx-wiki
       - hystrix
